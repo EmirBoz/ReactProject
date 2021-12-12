@@ -1,3 +1,3 @@
 # ReactProject
 
-Exercises for add component in React Project => Expenses added
+Exercise for add component in React Project => Expenses added
