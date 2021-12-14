@@ -6,6 +6,8 @@ import ExpenseDate from './ExpenseDate';
 
 const ExpenseItem = (props) => {
     const [title,setTitle] = useState(props.title);  // You are telling React that you wanna assign a new value to this state.
+    console.log('ExpenseItem evaluated by React'); // 4 kere yazılıyor.
+
     const clickHandler = () => {
         setTitle('Updated!!!!');
         console.log(title);
@@ -24,3 +26,7 @@ const ExpenseItem = (props) => {
 }
 
 export default ExpenseItem;
+
+// useState 'e ilk olarak değer ikinci olarak function ataması gerçekleştiriyoruz.
+// useState öge ve function döndürür
+// console.log ta eski değeri döndürür çünkü aşağıdaki kod bloğu biz butona tıkladıktan sonra componenttede değişiklik yapar
