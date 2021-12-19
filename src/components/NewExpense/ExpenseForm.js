@@ -2,6 +2,10 @@ import React,{ useState } from 'react';
 import './ExpenseForm.css';
 
 const ExpenseForm = (props) => {
+    // var enteredTitle="";
+    // function setEnteredTitle(params) {
+    //     enteredTitle=params
+    // }
     const [enteredTitle, setEnteredTitle] = useState('');
     const [enteredAmount, setEnteredAmount] = useState('');
     const [enteredDate, setEnteredDate] = useState('');
@@ -39,7 +43,7 @@ const ExpenseForm = (props) => {
         event.preventDefault();
         const expenseData = {
             title : enteredTitle,
-            amount : enteredAmount,
+            amount : parseFloat(enteredAmount),
             date :  new Date(enteredDate)
         };
 
